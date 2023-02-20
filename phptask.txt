@@ -1,0 +1,187 @@
+
+
+
+
+
+1)
+<?php
+  $length = 12;
+  $width = 6;
+    $area = $length * $width;
+      $perimeter = 2 * ($length + $width);
+
+
+        echo "Length: $length<br>";
+          echo "Width: $width<br>";
+           echo "Area: $area<br>";
+           echo "Perimeter: $perimeter";
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2)
+
+<?php
+
+       $amount = 1000;
+        $vat = $amount * 0.15;
+         $total_amount = $amount + $vat;
+           echo "Amount: $amount<br>";
+            echo "VAT (15%): $vat<br>";
+             echo "Total Amount (including VAT): $total_amount";
+?>
+
+
+3)
+
+<?php
+
+  $num = 9;
+  if($num % 2 == 0) 
+{
+  echo "$num is even.";
+} 
+else
+ {
+  echo "$num is odd.";
+}
+?>
+
+
+4)
+
+<?php
+
+  $num1 = 6;
+  $num2 = 2;
+   $num3 = 4;
+   if($num1 >= $num2 && $num1 >= $num3)
+ {
+  echo "$num1 is the largest number.";
+} 
+elseif
+($num2 >= $num1 && $num2 >= $num3) 
+{
+  echo "$num2 is the largest number.";
+} 
+else 
+{
+  echo "$num3 is the largest number.";
+}
+?>
+
+
+5)
+
+
+
+
+
+
+
+
+
+
+
+
+
+6)
+
+
+<?php
+
+   $fruits = array("Strawberry", "banana", "pech", "watermelon", "mango");
+
+          $search = "banana";
+
+
+         $found = false;
+       foreach($fruits as $fruit) {
+           if($fruit == $search) {
+             $found = true;
+        break;
+  }
+}
+
+
+     if($found) 
+  {
+     echo "$search was found in the array.";
+   } 
+  else 
+{
+        echo "$search was not found in the array.";
+}
+?>
+
+
+
+7)
+
+<?php
+for($i = 1; $i <= 3; $i++) {
+  for($j = 1; $j <= $i; $j++) {
+    echo "* ";
+  }
+  echo "<br>";
+}
+?>
+  
+      <?php
+for($i = 1; $i <= 3; $i++) {
+  for($j = 1; $j <= $i; $j++) {
+    echo $j;
+  }
+  echo "<br>";
+}
+?>
+
+ <?php
+$count = 1;
+for($i = 1; $i <= 2; $i++) {
+  for($j = 1; $j <= 2; $j++) {
+    echo $count;
+    $count++;
+  }
+  echo "<br>";
+}
+?>
+ <?php
+ for($i = 1; $i <= 3; $i++) {
+  for($j = 1; $j <= $i; $j++) {
+    echo $j . " ";
+  }
+  echo "<br>";
+}
+?>
+  <?php
+ $count = 65; //code for 'A'
+for($i = 1; $i <= 3; $i++) {
+  for($j = 1; $j <= $i; $j++) {
+    echo chr($count) . " ";
+    $count++;
+  }
+  echo "<br>";
+}
+?>
+
+
